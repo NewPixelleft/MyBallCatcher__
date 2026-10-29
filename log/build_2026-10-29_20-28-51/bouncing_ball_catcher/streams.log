@@ -1,0 +1,29 @@
+[0.016s] Invoking command in '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/agwyn/ros2_ballGame/build/bouncing_ball_catcher -- -j8 -l8
+[0.076s] [35m[1mConsolidate compiler generated dependencies of target game_node[0m
+[0.099s] [ 50%] Built target camera_node
+[0.104s] [ 75%] [32mBuilding CXX object CMakeFiles/game_node.dir/src/game_node.cpp.o[0m
+[4.291s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:116:34:[m[K [01;31m[Kerror: [m[K‘[01m[KmsgInt32[m[K’ is not a member of ‘[01m[Kstd_msgs[m[K’
+[4.291s]   116 |     rclcpp::Publisher <std_msgs::[01;31m[KmsgInt32[m[K>::SharedPtr scorePub;
+[4.291s]       |                                  [01;31m[K^~~~~~~~[m[K
+[4.292s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:116:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.292s]   116 |     rclcpp::Publisher <std_msgs::msgInt32[01;31m[K>[m[K::SharedPtr scorePub;
+[4.292s]       |                                          [01;31m[K^[m[K
+[4.292s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:116:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[4.292s]   116 |     rclcpp::Publisher <std_msgs::msgInt32>::[01;31m[KSharedPtr[m[K scorePub;
+[4.292s]       |                                             [01;31m[K^~~~~~~~~[m[K
+[4.293s]       |                                                      [32m[K;[m[K
+[4.295s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:116:55:[m[K [01;31m[Kerror: [m[K‘[01m[KscorePub[m[K’ does not name a type
+[4.295s]   116 |     rclcpp::Publisher <std_msgs::msgInt32>::SharedPtr [01;31m[KscorePub[m[K;
+[4.295s]       |                                                       [01;31m[K^~~~~~~~[m[K
+[4.319s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In constructor ‘[01m[KGameNode::GameNode()[m[K’:
+[4.319s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:87:9:[m[K [01;31m[Kerror: [m[K‘[01m[KscorePub[m[K’ was not declared in this scope
+[4.320s]    87 |         [01;31m[KscorePub[m[K = this->
+[4.320s]       |         [01;31m[K^~~~~~~~[m[K
+[4.349s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.349s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:226:21:[m[K [01;31m[Kerror: [m[K‘[01m[KscorePub[m[K’ was not declared in this scope
+[4.349s]   226 |                     [01;31m[KscorePub[m[K->publish(scoreMsg);
+[4.349s]       |                     [01;31m[K^~~~~~~~[m[K
+[7.187s] gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1
+[7.188s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+[7.188s] gmake: *** [Makefile:146: all] Error 2
+[7.194s] Invoked command in '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/agwyn/ros2_ballGame/build/bouncing_ball_catcher -- -j8 -l8

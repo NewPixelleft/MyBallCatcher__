@@ -1,0 +1,14 @@
+[0.014s] Invoking command in '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agwyn/ros2_ballGame/build/bouncing_ball_catcher -- -j8 -l8
+[0.087s] [ 25%] [32mBuilding CXX object CMakeFiles/game_node.dir/src/game_node.cpp.o[0m
+[0.088s] [ 75%] Built target camera_node
+[10.693s] [100%] [32m[1mLinking CXX executable game_node[0m
+[11.458s] /usr/bin/ld: CMakeFiles/game_node.dir/src/game_node.cpp.o: in function `main':
+[11.458s] game_node.cpp:(.text+0x14c): undefined reference to `cv::destroyAllWindows()'
+[11.460s] /usr/bin/ld: CMakeFiles/game_node.dir/src/game_node.cpp.o: in function `GameNode::imageCallback(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)':
+[11.460s] game_node.cpp:(.text._ZN8GameNode13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE[_ZN8GameNode13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE]+0x2e2): undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
+[11.461s] /usr/bin/ld: game_node.cpp:(.text._ZN8GameNode13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE[_ZN8GameNode13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE]+0x319): undefined reference to `cv::waitKey(int)'
+[11.534s] collect2: error: ld returned 1 exit status
+[11.537s] gmake[2]: *** [CMakeFiles/game_node.dir/build.make:179: game_node] Error 1
+[11.538s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+[11.538s] gmake: *** [Makefile:146: all] Error 2
+[11.542s] Invoked command in '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agwyn/ros2_ballGame/build/bouncing_ball_catcher -- -j8 -l8

@@ -1,0 +1,15 @@
+[0.016s] Invoking command in '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agwyn/ros2_ballGame/build/bouncing_ball_catcher -- -j8 -l8
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target camera_node[0m
+[0.089s] [ 25%] [32mBuilding CXX object CMakeFiles/game_node.dir/src/game_node.cpp.o[0m
+[0.108s] [ 75%] Built target camera_node
+[3.885s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:28:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kimage_callback[m[K’ is not a member of ‘[01m[KGameNode[m[K’
+[3.886s]    28 |                             &GameNode::[01;31m[Kimage_callback[m[K,
+[3.886s]       |                                        [01;31m[K^~~~~~~~~~~~~~[m[K
+[3.910s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[3.910s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:50:45:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe[m[K’ was not declared in this scope
+[3.910s]    50 |         cv::imshow("Bouncing Ball Catcher", [01;31m[Kframe[m[K);
+[3.911s]       |                                             [01;31m[K^~~~~[m[K
+[4.946s] gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1
+[4.946s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+[4.947s] gmake: *** [Makefile:146: all] Error 2
+[4.950s] Invoked command in '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agwyn/ros2_ballGame/build/bouncing_ball_catcher -- -j8 -l8

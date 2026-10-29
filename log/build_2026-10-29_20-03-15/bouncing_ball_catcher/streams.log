@@ -1,0 +1,27 @@
+[0.014s] Invoking command in '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/agwyn/ros2_ballGame/build/bouncing_ball_catcher -- -j8 -l8
+[0.073s] [35m[1mConsolidate compiler generated dependencies of target game_node[0m
+[0.088s] [ 50%] Built target camera_node
+[0.100s] [ 75%] [32mBuilding CXX object CMakeFiles/game_node.dir/src/game_node.cpp.o[0m
+[4.174s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[4.174s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:184:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kball[m[K’ was not declared in this scope; did you mean ‘[01m[KBall[m[K’?
+[4.174s]   184 |         [01;31m[Kball[m[K *nearestBall = nullptr;
+[4.174s]       |         [01;31m[K^~~~[m[K
+[4.174s]       |         [32m[KBall[m[K
+[4.184s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:184:15:[m[K [01;31m[Kerror: [m[K‘[01m[KnearestBall[m[K’ was not declared in this scope
+[4.184s]   184 |         ball *[01;31m[KnearestBall[m[K = nullptr;
+[4.184s]       |               [01;31m[K^~~~~~~~~~~[m[K
+[4.188s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::respawnBall(Ball&, int, int)[m[K’:
+[4.188s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:283:45:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::uniform_int_distribution<int> xDist[m[K’
+[4.188s]   283 |         std::uniform_int_distribution <int> [01;31m[KxDist[m[K(
+[4.189s]       |                                             [01;31m[K^~~~~[m[K
+[4.189s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:280:45:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::uniform_int_distribution<int> xDist[m[K’ previously declared here
+[4.189s]   280 |         std::uniform_int_distribution <int> [01;36m[KxDist[m[K(
+[4.189s]       |                                             [01;36m[K^~~~~[m[K
+[4.195s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:291:36:[m[K [01;31m[Kerror: [m[K‘[01m[KyDist[m[K’ was not declared in this scope; did you mean ‘[01m[KxDist[m[K’?
+[4.195s]   291 |                 static_cast<float>([01;31m[KyDist[m[K(rng))
+[4.196s]       |                                    [01;31m[K^~~~~[m[K
+[4.196s]       |                                    [32m[KxDist[m[K
+[6.870s] gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1
+[6.870s] gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+[6.871s] gmake: *** [Makefile:146: all] Error 2
+[6.874s] Invoked command in '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/agwyn/ros2_ballGame/build/bouncing_ball_catcher -- -j8 -l8

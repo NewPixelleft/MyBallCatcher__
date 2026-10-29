@@ -1,0 +1,4 @@
+source;share/bouncing_ball_catcher/local_setup.bash
+source;share/bouncing_ball_catcher/local_setup.dsv
+source;share/bouncing_ball_catcher/local_setup.sh
+source;share/bouncing_ball_catcher/local_setup.zsh

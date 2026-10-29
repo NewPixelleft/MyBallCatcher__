@@ -1,0 +1,36 @@
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:108:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kidx[m[K’ was not declared in this scope
+  108 |         setLargestArea(largestArea, [01;31m[Kidx[m[K, contours);
+      |                                     [01;31m[K^~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::setLargestArea(double&, int&, const std::vector<std::vector<cv::Point_<int> > >&)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:123:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  123 |         for (size_t i = 0; [01;35m[Ki < static_cast<int>(contGroup.size())[m[K; i++){
+      |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::drawFrame(const std::vector<cv::Point_<int> >&)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:139:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kframe[m[K’ was not declared in this scope
+  139 |                 [01;31m[Kframe[m[K,
+      |                 [01;31m[K^~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:140:33:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before ‘[01m[K;[m[K’ token
+  140 |                 cv::Point (X, Y)[01;31m[K;[m[K
+      |                                 [01;31m[K^[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:138:23:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  138 |             cv::circle[01;36m[K([m[K
+      |                       [01;36m[K^[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:141:17:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  141 |                 [01;35m[K5[m[K,
+      |                 [01;35m[K^[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:144:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K)[m[K’ token
+  144 |             [01;31m[K)[m[K;
+      |             [01;31m[K^[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:143:17:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+  143 |                 [01;35m[K-1[m[K
+      |                 [01;35m[K^~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:151:17:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K)[m[K’ before numeric constant
+  151 |                 [01;31m[K2[m[K
+      |                 [01;31m[K^[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:146:24:[m[K [01;36m[Knote: [m[Kto match this ‘[01m[K([m[K’
+  146 |             cv::putText[01;36m[K([m[K
+      |                        [01;36m[K^[m[K
+gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

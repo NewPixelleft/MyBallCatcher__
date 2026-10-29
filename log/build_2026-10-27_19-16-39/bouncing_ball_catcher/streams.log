@@ -1,0 +1,10 @@
+[0.013s] Invoking command in '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agwyn/ros2_ballGame/build/bouncing_ball_catcher -- -j8 -l8
+[0.080s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_node.dir/src/camera_node.cpp.o[0m
+[0.207s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:6:10:[m[K [01;31m[Kfatal error: [m[Krlcpp/rlcpp.hpp: No such file or directory
+[0.208s]     6 | #include [01;31m[K<rlcpp/rlcpp.hpp>[m[K
+[0.208s]       |          [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+[0.208s] compilation terminated.
+[0.210s] gmake[2]: *** [CMakeFiles/camera_node.dir/build.make:76: CMakeFiles/camera_node.dir/src/camera_node.cpp.o] Error 1
+[0.211s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/camera_node.dir/all] Error 2
+[0.211s] gmake: *** [Makefile:146: all] Error 2
+[0.218s] Invoked command in '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agwyn/ros2_ballGame/build/bouncing_ball_catcher -- -j8 -l8

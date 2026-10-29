@@ -1,0 +1,29 @@
+[35m[1mConsolidate compiler generated dependencies of target game_node[0m
+[ 50%] Built target camera_node
+[ 75%] [32mBuilding CXX object CMakeFiles/game_node.dir/src/game_node.cpp.o[0m
+In file included from [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:8[m[K:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/colourParser.h:[m[K In function ‘[01m[Kvoid parseColour(std::ifstream, hsvBarrier&)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/colourParser.h:27:29:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+   27 |         throw std::exception[01;31m[K;[m[K
+      |                             [01;31m[K^[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/colourParser.h:29:55:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K;[m[K’ token
+   29 |     auto &[cname, hm, hx, vm, vx, sm, sx] = hsvBarrier[01;31m[K;[m[K
+      |                                                       [01;31m[K^[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/colourParser.h:25:58:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kbarrier[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+   25 | void parseColour(std::ifstream colourConfig, [01;35m[KhsvBarrier &barrier[m[K){
+      |                                              [01;35m[K~~~~~~~~~~~~^~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In constructor ‘[01m[KGameNode::GameNode()[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:27:24:[m[K [01;31m[Kerror: [m[Kuse of deleted function ‘[01m[Kstd::basic_ifstream<_CharT, _Traits>::basic_ifstream(const std::basic_ifstream<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>][m[K’
+   27 |             [01;31m[KparseColour(colfile, cb)[m[K;
+      |             [01;31m[K~~~~~~~~~~~^~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:7[m[K:
+[01m[K/usr/include/c++/11/fstream:590:7:[m[K [01;36m[Knote: [m[Kdeclared here
+  590 |       [01;36m[Kbasic_ifstream[m[K(const basic_ifstream&) = delete;
+      |       [01;36m[K^~~~~~~~~~~~~~[m[K
+In file included from [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:8[m[K:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/colourParser.h:25:32:[m[K [01;36m[Knote: [m[K  initializing argument 1 of ‘[01m[Kvoid parseColour(std::ifstream, hsvBarrier&)[m[K’
+   25 | void parseColour([01;36m[Kstd::ifstream colourConfig[m[K, hsvBarrier &barrier){
+      |                  [01;36m[K~~~~~~~~~~~~~~^~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

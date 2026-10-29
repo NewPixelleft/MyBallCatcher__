@@ -1,0 +1,159 @@
+[0.000000] (-) TimerEvent: {}
+[0.000932] (bouncing_ball_catcher) JobQueued: {'identifier': 'bouncing_ball_catcher', 'dependencies': OrderedDict()}
+[0.001142] (bouncing_ball_catcher) JobStarted: {'identifier': 'bouncing_ball_catcher'}
+[0.013485] (bouncing_ball_catcher) JobProgress: {'identifier': 'bouncing_ball_catcher', 'progress': 'cmake'}
+[0.014615] (bouncing_ball_catcher) JobProgress: {'identifier': 'bouncing_ball_catcher', 'progress': 'build'}
+[0.016473] (bouncing_ball_catcher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher', '--', '-j8', '-l8'], 'cwd': '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'agwyn'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/agwyn'), ('OLDPWD', '/home/agwyn'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1199'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/agwyn/ros2_ballGame/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'agwyn'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'agwyn'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvim'), ('SESSION_MANAGER', 'local/VannaLinux:@/tmp/.ICE-unix/1166,unix/VannaLinux:/tmp/.ICE-unix/1166'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b87123d0_2ddc_482a_80f6_52c514fa9d4b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GKZ0X3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/agwyn/ros2_ballGame/install/bouncing_ball_catcher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/agwyn/ros2_ballGame/install/bouncing_ball_catcher:/opt/ros/humble')]), 'shell': False}
+[0.085748] (bouncing_ball_catcher) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target game_node\x1b[0m\n'}
+[0.099548] (-) TimerEvent: {}
+[0.106381] (bouncing_ball_catcher) StdoutLine: {'line': b'[ 50%] Built target camera_node\n'}
+[0.114548] (bouncing_ball_catcher) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/game_node.dir/src/game_node.cpp.o\x1b[0m\n'}
+[0.199676] (-) TimerEvent: {}
+[0.300107] (-) TimerEvent: {}
+[0.400503] (-) TimerEvent: {}
+[0.500857] (-) TimerEvent: {}
+[0.601246] (-) TimerEvent: {}
+[0.701614] (-) TimerEvent: {}
+[0.802028] (-) TimerEvent: {}
+[0.902452] (-) TimerEvent: {}
+[1.002892] (-) TimerEvent: {}
+[1.103326] (-) TimerEvent: {}
+[1.203721] (-) TimerEvent: {}
+[1.304168] (-) TimerEvent: {}
+[1.404572] (-) TimerEvent: {}
+[1.504963] (-) TimerEvent: {}
+[1.605361] (-) TimerEvent: {}
+[1.705668] (-) TimerEvent: {}
+[1.806090] (-) TimerEvent: {}
+[1.906657] (-) TimerEvent: {}
+[2.007009] (-) TimerEvent: {}
+[2.107463] (-) TimerEvent: {}
+[2.207919] (-) TimerEvent: {}
+[2.308281] (-) TimerEvent: {}
+[2.408783] (-) TimerEvent: {}
+[2.509245] (-) TimerEvent: {}
+[2.609687] (-) TimerEvent: {}
+[2.710149] (-) TimerEvent: {}
+[2.810491] (-) TimerEvent: {}
+[2.910854] (-) TimerEvent: {}
+[3.011259] (-) TimerEvent: {}
+[3.111606] (-) TimerEvent: {}
+[3.211989] (-) TimerEvent: {}
+[3.312413] (-) TimerEvent: {}
+[3.412895] (-) TimerEvent: {}
+[3.513356] (-) TimerEvent: {}
+[3.613785] (-) TimerEvent: {}
+[3.714120] (-) TimerEvent: {}
+[3.814451] (-) TimerEvent: {}
+[3.914894] (-) TimerEvent: {}
+[4.015340] (-) TimerEvent: {}
+[4.115677] (-) TimerEvent: {}
+[4.216071] (-) TimerEvent: {}
+[4.316460] (-) TimerEvent: {}
+[4.416812] (-) TimerEvent: {}
+[4.517138] (-) TimerEvent: {}
+[4.617474] (-) TimerEvent: {}
+[4.717841] (-) TimerEvent: {}
+[4.818334] (-) TimerEvent: {}
+[4.919065] (-) TimerEvent: {}
+[5.020547] (-) TimerEvent: {}
+[5.121087] (-) TimerEvent: {}
+[5.221518] (-) TimerEvent: {}
+[5.321899] (-) TimerEvent: {}
+[5.422355] (-) TimerEvent: {}
+[5.522825] (-) TimerEvent: {}
+[5.623194] (-) TimerEvent: {}
+[5.723571] (-) TimerEvent: {}
+[5.823998] (-) TimerEvent: {}
+[5.924414] (-) TimerEvent: {}
+[6.024779] (-) TimerEvent: {}
+[6.125180] (-) TimerEvent: {}
+[6.225525] (-) TimerEvent: {}
+[6.325896] (-) TimerEvent: {}
+[6.426304] (-) TimerEvent: {}
+[6.526671] (-) TimerEvent: {}
+[6.627028] (-) TimerEvent: {}
+[6.727442] (-) TimerEvent: {}
+[6.827826] (-) TimerEvent: {}
+[6.928229] (-) TimerEvent: {}
+[7.028556] (-) TimerEvent: {}
+[7.128890] (-) TimerEvent: {}
+[7.229270] (-) TimerEvent: {}
+[7.329680] (-) TimerEvent: {}
+[7.430155] (-) TimerEvent: {}
+[7.530550] (-) TimerEvent: {}
+[7.630954] (-) TimerEvent: {}
+[7.731313] (-) TimerEvent: {}
+[7.831812] (-) TimerEvent: {}
+[7.932220] (-) TimerEvent: {}
+[8.032669] (-) TimerEvent: {}
+[8.133146] (-) TimerEvent: {}
+[8.233547] (-) TimerEvent: {}
+[8.333889] (-) TimerEvent: {}
+[8.434263] (-) TimerEvent: {}
+[8.534668] (-) TimerEvent: {}
+[8.635035] (-) TimerEvent: {}
+[8.735395] (-) TimerEvent: {}
+[8.835766] (-) TimerEvent: {}
+[8.936280] (-) TimerEvent: {}
+[9.036686] (-) TimerEvent: {}
+[9.137222] (-) TimerEvent: {}
+[9.237683] (-) TimerEvent: {}
+[9.338197] (-) TimerEvent: {}
+[9.438749] (-) TimerEvent: {}
+[9.539151] (-) TimerEvent: {}
+[9.639505] (-) TimerEvent: {}
+[9.739942] (-) TimerEvent: {}
+[9.840312] (-) TimerEvent: {}
+[9.940682] (-) TimerEvent: {}
+[10.041218] (-) TimerEvent: {}
+[10.141629] (-) TimerEvent: {}
+[10.241995] (-) TimerEvent: {}
+[10.342527] (-) TimerEvent: {}
+[10.442948] (-) TimerEvent: {}
+[10.543311] (-) TimerEvent: {}
+[10.643833] (-) TimerEvent: {}
+[10.744188] (-) TimerEvent: {}
+[10.844571] (-) TimerEvent: {}
+[10.945183] (-) TimerEvent: {}
+[11.045577] (-) TimerEvent: {}
+[11.145982] (-) TimerEvent: {}
+[11.229412] (bouncing_ball_catcher) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable game_node\x1b[0m\n'}
+[11.246108] (-) TimerEvent: {}
+[11.346530] (-) TimerEvent: {}
+[11.447033] (-) TimerEvent: {}
+[11.547528] (-) TimerEvent: {}
+[11.648059] (-) TimerEvent: {}
+[11.748460] (-) TimerEvent: {}
+[11.848902] (-) TimerEvent: {}
+[11.949307] (-) TimerEvent: {}
+[12.049680] (-) TimerEvent: {}
+[12.150082] (-) TimerEvent: {}
+[12.250496] (-) TimerEvent: {}
+[12.321771] (bouncing_ball_catcher) StdoutLine: {'line': b'[100%] Built target game_node\n'}
+[12.336370] (bouncing_ball_catcher) CommandEnded: {'returncode': 0}
+[12.337076] (bouncing_ball_catcher) JobProgress: {'identifier': 'bouncing_ball_catcher', 'progress': 'install'}
+[12.350706] (bouncing_ball_catcher) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher'], 'cwd': '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'agwyn'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/agwyn'), ('OLDPWD', '/home/agwyn'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1199'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/agwyn/ros2_ballGame/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'agwyn'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'agwyn'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvim'), ('SESSION_MANAGER', 'local/VannaLinux:@/tmp/.ICE-unix/1166,unix/VannaLinux:/tmp/.ICE-unix/1166'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b87123d0_2ddc_482a_80f6_52c514fa9d4b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GKZ0X3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/agwyn/ros2_ballGame/install/bouncing_ball_catcher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/agwyn/ros2_ballGame/install/bouncing_ball_catcher:/opt/ros/humble')]), 'shell': False}
+[12.352093] (-) TimerEvent: {}
+[12.360575] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[12.360873] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/lib/bouncing_ball_catcher/camera_node\n'}
+[12.361167] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Installing: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/lib/bouncing_ball_catcher/game_node\n'}
+[12.368419] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Set runtime path of "/home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/lib/bouncing_ball_catcher/game_node" to ""\n'}
+[12.368857] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/ament_index/resource_index/package_run_dependencies/bouncing_ball_catcher\n'}
+[12.369143] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/ament_index/resource_index/parent_prefix_path/bouncing_ball_catcher\n'}
+[12.369455] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/bouncing_ball_catcher/environment/ament_prefix_path.sh\n'}
+[12.369732] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/bouncing_ball_catcher/environment/ament_prefix_path.dsv\n'}
+[12.369991] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/bouncing_ball_catcher/environment/path.sh\n'}
+[12.370236] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/bouncing_ball_catcher/environment/path.dsv\n'}
+[12.370472] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/bouncing_ball_catcher/local_setup.bash\n'}
+[12.370742] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/bouncing_ball_catcher/local_setup.sh\n'}
+[12.370987] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/bouncing_ball_catcher/local_setup.zsh\n'}
+[12.371339] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/bouncing_ball_catcher/local_setup.dsv\n'}
+[12.371877] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Installing: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/bouncing_ball_catcher/package.dsv\n'}
+[12.372772] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/ament_index/resource_index/packages/bouncing_ball_catcher\n'}
+[12.373262] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/bouncing_ball_catcher/cmake/bouncing_ball_catcherConfig.cmake\n'}
+[12.373800] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/bouncing_ball_catcher/cmake/bouncing_ball_catcherConfig-version.cmake\n'}
+[12.374058] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Up-to-date: /home/agwyn/ros2_ballGame/install/bouncing_ball_catcher/share/bouncing_ball_catcher/package.xml\n'}
+[12.374205] (bouncing_ball_catcher) CommandEnded: {'returncode': 0}
+[12.418056] (bouncing_ball_catcher) JobEnded: {'identifier': 'bouncing_ball_catcher', 'rc': 0}
+[12.419549] (-) EventReactorShutdown: {}

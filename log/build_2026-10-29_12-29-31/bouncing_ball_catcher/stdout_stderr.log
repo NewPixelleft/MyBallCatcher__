@@ -1,0 +1,14 @@
+[35m[1mConsolidate compiler generated dependencies of target game_node[0m
+[ 50%] Built target camera_node
+[ 75%] [32mBuilding CXX object CMakeFiles/game_node.dir/src/game_node.cpp.o[0m
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:108:37:[m[K [01;31m[Kerror: [m[K‘[01m[Kidx[m[K’ was not declared in this scope
+  108 |         setLargestArea(largestArea, [01;31m[Kidx[m[K, contours);
+      |                                     [01;31m[K^~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::setLargestArea(double&, int&, const std::vector<std::vector<cv::Point_<int> > >&)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:123:30:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Ksize_t[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kint[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare-Wsign-compare]8;;[m[K]
+  123 |         for (size_t i = 0; [01;35m[Ki < static_cast<int>(contGroup.size())[m[K; i++){
+      |                            [01;35m[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

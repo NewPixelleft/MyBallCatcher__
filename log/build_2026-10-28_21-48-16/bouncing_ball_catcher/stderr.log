@@ -1,0 +1,9 @@
+/usr/bin/ld: CMakeFiles/game_node.dir/src/game_node.cpp.o: in function `main':
+game_node.cpp:(.text+0x14c): undefined reference to `cv::destroyAllWindows()'
+/usr/bin/ld: CMakeFiles/game_node.dir/src/game_node.cpp.o: in function `GameNode::imageCallback(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)':
+game_node.cpp:(.text._ZN8GameNode13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE[_ZN8GameNode13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE]+0x2e2): undefined reference to `cv::imshow(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, cv::_InputArray const&)'
+/usr/bin/ld: game_node.cpp:(.text._ZN8GameNode13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE[_ZN8GameNode13imageCallbackESt10shared_ptrIN11sensor_msgs3msg6Image_ISaIvEEEE]+0x319): undefined reference to `cv::waitKey(int)'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/game_node.dir/build.make:179: game_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,24 @@
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:116:34:[m[K [01;31m[Kerror: [m[K‘[01m[KmsgInt32[m[K’ is not a member of ‘[01m[Kstd_msgs[m[K’
+  116 |     rclcpp::Publisher <std_msgs::[01;31m[KmsgInt32[m[K>::SharedPtr scorePub;
+      |                                  [01;31m[K^~~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:116:42:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  116 |     rclcpp::Publisher <std_msgs::msgInt32[01;31m[K>[m[K::SharedPtr scorePub;
+      |                                          [01;31m[K^[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:116:45:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  116 |     rclcpp::Publisher <std_msgs::msgInt32>::[01;31m[KSharedPtr[m[K scorePub;
+      |                                             [01;31m[K^~~~~~~~~[m[K
+      |                                                      [32m[K;[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:116:55:[m[K [01;31m[Kerror: [m[K‘[01m[KscorePub[m[K’ does not name a type
+  116 |     rclcpp::Publisher <std_msgs::msgInt32>::SharedPtr [01;31m[KscorePub[m[K;
+      |                                                       [01;31m[K^~~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In constructor ‘[01m[KGameNode::GameNode()[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:87:9:[m[K [01;31m[Kerror: [m[K‘[01m[KscorePub[m[K’ was not declared in this scope
+   87 |         [01;31m[KscorePub[m[K = this->
+      |         [01;31m[K^~~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:226:21:[m[K [01;31m[Kerror: [m[K‘[01m[KscorePub[m[K’ was not declared in this scope
+  226 |                     [01;31m[KscorePub[m[K->publish(scoreMsg);
+      |                     [01;31m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

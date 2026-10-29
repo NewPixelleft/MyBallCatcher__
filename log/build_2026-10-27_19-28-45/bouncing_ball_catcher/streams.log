@@ -1,0 +1,18 @@
+[0.015s] Invoking command in '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agwyn/ros2_ballGame/build/bouncing_ball_catcher -- -j8 -l8
+[0.077s] [35m[1mConsolidate compiler generated dependencies of target camera_node[0m
+[0.104s] [ 50%] [32mBuilding CXX object CMakeFiles/camera_node.dir/src/camera_node.cpp.o[0m
+[3.779s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:[m[K In member function ‘[01m[Kvoid CameraNode::publish_frame()[m[K’:
+[3.779s] [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:85:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::VideoCapture::set(cv::VideoCaptureProperties)[m[K’
+[3.780s]    85 |                 [01;31m[Kcap.set(cv::CAP_PROP_POS_FRAMES)[m[K;
+[3.780s]       |                 [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[3.780s] In file included from [01m[K/usr/include/opencv4/opencv2/highgui.hpp:51[m[K,
+[3.780s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:68[m[K,
+[3.781s]                  from [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:10[m[K:
+[3.781s] [01m[K/usr/include/opencv4/opencv2/videoio.hpp:868:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual bool cv::VideoCapture::set(int, double)[m[K’
+[3.781s]   868 |     CV_WRAP virtual bool [01;36m[Kset[m[K(int propId, double value);
+[3.781s]       |                          [01;36m[K^~~[m[K
+[3.782s] [01m[K/usr/include/opencv4/opencv2/videoio.hpp:868:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[5.744s] gmake[2]: *** [CMakeFiles/camera_node.dir/build.make:76: CMakeFiles/camera_node.dir/src/camera_node.cpp.o] Error 1
+[5.745s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/camera_node.dir/all] Error 2
+[5.745s] gmake: *** [Makefile:146: all] Error 2
+[5.749s] Invoked command in '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agwyn/ros2_ballGame/build/bouncing_ball_catcher -- -j8 -l8

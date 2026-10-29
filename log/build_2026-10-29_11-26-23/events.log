@@ -1,0 +1,159 @@
+[0.000000] (-) TimerEvent: {}
+[0.001431] (bouncing_ball_catcher) JobQueued: {'identifier': 'bouncing_ball_catcher', 'dependencies': OrderedDict()}
+[0.002077] (bouncing_ball_catcher) JobStarted: {'identifier': 'bouncing_ball_catcher'}
+[0.025106] (bouncing_ball_catcher) JobProgress: {'identifier': 'bouncing_ball_catcher', 'progress': 'cmake'}
+[0.027596] (bouncing_ball_catcher) JobProgress: {'identifier': 'bouncing_ball_catcher', 'progress': 'build'}
+[0.029368] (bouncing_ball_catcher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher', '--', '-j8', '-l8'], 'cwd': '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'agwyn'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/agwyn'), ('OLDPWD', '/home/agwyn'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1199'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'agwyn'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'agwyn'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvim'), ('SESSION_MANAGER', 'local/VannaLinux:@/tmp/.ICE-unix/1166,unix/VannaLinux:/tmp/.ICE-unix/1166'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1d559f6e_38bb_427e_9131_f8bcfe505fda'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GKZ0X3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.96'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099234] (-) TimerEvent: {}
+[0.166441] (bouncing_ball_catcher) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target game_node\x1b[0m\n'}
+[0.199435] (-) TimerEvent: {}
+[0.214967] (bouncing_ball_catcher) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/game_node.dir/src/game_node.cpp.o\x1b[0m\n'}
+[0.215375] (bouncing_ball_catcher) StdoutLine: {'line': b'[ 75%] Built target camera_node\n'}
+[0.299653] (-) TimerEvent: {}
+[0.400332] (-) TimerEvent: {}
+[0.501145] (-) TimerEvent: {}
+[0.601890] (-) TimerEvent: {}
+[0.702605] (-) TimerEvent: {}
+[0.803284] (-) TimerEvent: {}
+[0.903946] (-) TimerEvent: {}
+[1.004581] (-) TimerEvent: {}
+[1.105287] (-) TimerEvent: {}
+[1.206043] (-) TimerEvent: {}
+[1.306681] (-) TimerEvent: {}
+[1.407482] (-) TimerEvent: {}
+[1.508160] (-) TimerEvent: {}
+[1.608806] (-) TimerEvent: {}
+[1.679964] (bouncing_ball_catcher) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:8\x1b[m\x1b[K:\n'}
+[1.680542] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/colourParser.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid parseColour(std::ifstream, hsvBarrier&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.680776] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/colourParser.h:27:29:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.680971] (bouncing_ball_catcher) StderrLine: {'line': b'   27 |         throw std::exception\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[1.681160] (bouncing_ball_catcher) StderrLine: {'line': b'      |                             \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.681337] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/colourParser.h:29:55:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K;\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.681810] (bouncing_ball_catcher) StderrLine: {'line': b'   29 |     auto &[cname, hm, hx, vm, vx, sm, sx] = hsvBarrier\x1b[01;31m\x1b[K;\x1b[m\x1b[K\n'}
+[1.682032] (bouncing_ball_catcher) StderrLine: {'line': b'      |                                                       \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.682205] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/colourParser.h:25:58:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kbarrier\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[1.682405] (bouncing_ball_catcher) StderrLine: {'line': b'   25 | void parseColour(std::ifstream colourConfig, \x1b[01;35m\x1b[KhsvBarrier &barrier\x1b[m\x1b[K){\n'}
+[1.682603] (bouncing_ball_catcher) StderrLine: {'line': b'      |                                              \x1b[01;35m\x1b[K~~~~~~~~~~~~^~~~~~~\x1b[m\x1b[K\n'}
+[1.708976] (-) TimerEvent: {}
+[1.809566] (-) TimerEvent: {}
+[1.910241] (-) TimerEvent: {}
+[2.010895] (-) TimerEvent: {}
+[2.111530] (-) TimerEvent: {}
+[2.212182] (-) TimerEvent: {}
+[2.312853] (-) TimerEvent: {}
+[2.413545] (-) TimerEvent: {}
+[2.514176] (-) TimerEvent: {}
+[2.614841] (-) TimerEvent: {}
+[2.715502] (-) TimerEvent: {}
+[2.816138] (-) TimerEvent: {}
+[2.916780] (-) TimerEvent: {}
+[3.017456] (-) TimerEvent: {}
+[3.118165] (-) TimerEvent: {}
+[3.218896] (-) TimerEvent: {}
+[3.319573] (-) TimerEvent: {}
+[3.420286] (-) TimerEvent: {}
+[3.521029] (-) TimerEvent: {}
+[3.621862] (-) TimerEvent: {}
+[3.722555] (-) TimerEvent: {}
+[3.823240] (-) TimerEvent: {}
+[3.923968] (-) TimerEvent: {}
+[4.024783] (-) TimerEvent: {}
+[4.125568] (-) TimerEvent: {}
+[4.226241] (-) TimerEvent: {}
+[4.326973] (-) TimerEvent: {}
+[4.427706] (-) TimerEvent: {}
+[4.528371] (-) TimerEvent: {}
+[4.629075] (-) TimerEvent: {}
+[4.729786] (-) TimerEvent: {}
+[4.830524] (-) TimerEvent: {}
+[4.931223] (-) TimerEvent: {}
+[5.031970] (-) TimerEvent: {}
+[5.132689] (-) TimerEvent: {}
+[5.233427] (-) TimerEvent: {}
+[5.334134] (-) TimerEvent: {}
+[5.434853] (-) TimerEvent: {}
+[5.535595] (-) TimerEvent: {}
+[5.636284] (-) TimerEvent: {}
+[5.737001] (-) TimerEvent: {}
+[5.837729] (-) TimerEvent: {}
+[5.938460] (-) TimerEvent: {}
+[6.039161] (-) TimerEvent: {}
+[6.139950] (-) TimerEvent: {}
+[6.240786] (-) TimerEvent: {}
+[6.341586] (-) TimerEvent: {}
+[6.442230] (-) TimerEvent: {}
+[6.529114] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KGameNode::GameNode()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[6.529824] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:27:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kuse of deleted function \xe2\x80\x98\x1b[01m\x1b[Kstd::basic_ifstream<_CharT, _Traits>::basic_ifstream(const std::basic_ifstream<_CharT, _Traits>&) [with _CharT = char; _Traits = std::char_traits<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.530055] (bouncing_ball_catcher) StderrLine: {'line': b'   27 |             \x1b[01;31m\x1b[KparseColour(colfile, cb)\x1b[m\x1b[K;\n'}
+[6.530307] (bouncing_ball_catcher) StderrLine: {'line': b'      |             \x1b[01;31m\x1b[K~~~~~~~~~~~^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.530799] (bouncing_ball_catcher) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:7\x1b[m\x1b[K:\n'}
+[6.531065] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/11/fstream:590:7:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kdeclared here\n'}
+[6.531266] (bouncing_ball_catcher) StderrLine: {'line': b'  590 |       \x1b[01;36m\x1b[Kbasic_ifstream\x1b[m\x1b[K(const basic_ifstream&) = delete;\n'}
+[6.531496] (bouncing_ball_catcher) StderrLine: {'line': b'      |       \x1b[01;36m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.531697] (bouncing_ball_catcher) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:8\x1b[m\x1b[K:\n'}
+[6.531887] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/colourParser.h:25:32:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  initializing argument 1 of \xe2\x80\x98\x1b[01m\x1b[Kvoid parseColour(std::ifstream, hsvBarrier&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[6.532078] (bouncing_ball_catcher) StderrLine: {'line': b'   25 | void parseColour(\x1b[01;36m\x1b[Kstd::ifstream colourConfig\x1b[m\x1b[K, hsvBarrier &barrier){\n'}
+[6.532265] (bouncing_ball_catcher) StderrLine: {'line': b'      |                  \x1b[01;36m\x1b[K~~~~~~~~~~~~~~^~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[6.532471] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:34:66:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kstruct hsvBarrier\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kname\x1b[m\x1b[K\xe2\x80\x99; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcolname\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[6.532678] (bouncing_ball_catcher) StderrLine: {'line': b'   34 |         this->declare_parameter <std::string>("target_color", cb.\x1b[01;31m\x1b[Kname\x1b[m\x1b[K);\n'}
+[6.532905] (bouncing_ball_catcher) StderrLine: {'line': b'      |                                                                  \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[6.533088] (bouncing_ball_catcher) StderrLine: {'line': b'      |                                                                  \x1b[32m\x1b[Kcolname\x1b[m\x1b[K\n'}
+[6.542480] (-) TimerEvent: {}
+[6.643114] (-) TimerEvent: {}
+[6.743835] (-) TimerEvent: {}
+[6.844557] (-) TimerEvent: {}
+[6.945260] (-) TimerEvent: {}
+[7.045982] (-) TimerEvent: {}
+[7.146758] (-) TimerEvent: {}
+[7.247406] (-) TimerEvent: {}
+[7.348074] (-) TimerEvent: {}
+[7.448840] (-) TimerEvent: {}
+[7.549542] (-) TimerEvent: {}
+[7.650237] (-) TimerEvent: {}
+[7.750960] (-) TimerEvent: {}
+[7.851706] (-) TimerEvent: {}
+[7.952442] (-) TimerEvent: {}
+[8.053145] (-) TimerEvent: {}
+[8.153890] (-) TimerEvent: {}
+[8.254617] (-) TimerEvent: {}
+[8.355318] (-) TimerEvent: {}
+[8.456067] (-) TimerEvent: {}
+[8.556844] (-) TimerEvent: {}
+[8.657567] (-) TimerEvent: {}
+[8.758297] (-) TimerEvent: {}
+[8.859069] (-) TimerEvent: {}
+[8.959849] (-) TimerEvent: {}
+[9.060568] (-) TimerEvent: {}
+[9.161268] (-) TimerEvent: {}
+[9.261996] (-) TimerEvent: {}
+[9.362713] (-) TimerEvent: {}
+[9.463530] (-) TimerEvent: {}
+[9.564249] (-) TimerEvent: {}
+[9.664979] (-) TimerEvent: {}
+[9.765703] (-) TimerEvent: {}
+[9.866457] (-) TimerEvent: {}
+[9.967153] (-) TimerEvent: {}
+[10.067868] (-) TimerEvent: {}
+[10.168567] (-) TimerEvent: {}
+[10.269258] (-) TimerEvent: {}
+[10.369987] (-) TimerEvent: {}
+[10.470729] (-) TimerEvent: {}
+[10.571477] (-) TimerEvent: {}
+[10.672189] (-) TimerEvent: {}
+[10.772933] (-) TimerEvent: {}
+[10.873663] (-) TimerEvent: {}
+[10.974361] (-) TimerEvent: {}
+[11.075122] (-) TimerEvent: {}
+[11.176106] (-) TimerEvent: {}
+[11.276865] (-) TimerEvent: {}
+[11.377567] (-) TimerEvent: {}
+[11.478349] (-) TimerEvent: {}
+[11.579460] (-) TimerEvent: {}
+[11.680179] (-) TimerEvent: {}
+[11.780938] (-) TimerEvent: {}
+[11.787333] (bouncing_ball_catcher) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1\n'}
+[11.788220] (bouncing_ball_catcher) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2\n'}
+[11.788876] (bouncing_ball_catcher) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[11.797230] (bouncing_ball_catcher) CommandEnded: {'returncode': 2}
+[11.845370] (bouncing_ball_catcher) JobEnded: {'identifier': 'bouncing_ball_catcher', 'rc': 2}
+[11.856558] (-) EventReactorShutdown: {}

@@ -1,0 +1,137 @@
+[0.000000] (-) TimerEvent: {}
+[0.000759] (bouncing_ball_catcher) JobQueued: {'identifier': 'bouncing_ball_catcher', 'dependencies': OrderedDict()}
+[0.001215] (bouncing_ball_catcher) JobStarted: {'identifier': 'bouncing_ball_catcher'}
+[0.010381] (bouncing_ball_catcher) JobProgress: {'identifier': 'bouncing_ball_catcher', 'progress': 'cmake'}
+[0.011220] (bouncing_ball_catcher) JobProgress: {'identifier': 'bouncing_ball_catcher', 'progress': 'build'}
+[0.012135] (bouncing_ball_catcher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher', '--', '-j8', '-l8'], 'cwd': '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'agwyn'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/agwyn'), ('OLDPWD', '/home/agwyn'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1160'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'agwyn'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'agwyn'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvim'), ('SESSION_MANAGER', 'local/VannaLinux:@/tmp/.ICE-unix/1137,unix/VannaLinux:/tmp/.ICE-unix/1137'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/aff85740_0f5c_4335_92ef_990725733997'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.E64ZX3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.121'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.045519] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099674] (-) TimerEvent: {}
+[0.200020] (-) TimerEvent: {}
+[0.204127] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.248314] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.251844] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.261123] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.275672] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.294787] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.300123] (-) TimerEvent: {}
+[0.343730] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.345741] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.400222] (-) TimerEvent: {}
+[0.471972] (bouncing_ball_catcher) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.500328] (-) TimerEvent: {}
+[0.528119] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[0.559845] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)\n'}
+[0.571126] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") found components: core imgproc videoio \n'}
+[0.576175] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Found OpenCV: /usr (found version "4.5.4") found components: opencv_calib3d opencv_core opencv_dnn opencv_features2d opencv_flann opencv_highgui opencv_imgcodecs opencv_imgproc opencv_ml opencv_objdetect opencv_photo opencv_stitching opencv_video opencv_videoio opencv_alphamat opencv_aruco opencv_barcode opencv_bgsegm opencv_bioinspired opencv_ccalib opencv_datasets opencv_dnn_objdetect opencv_dnn_superres opencv_dpm opencv_face opencv_freetype opencv_fuzzy opencv_hdf opencv_hfs opencv_img_hash opencv_intensity_transform opencv_line_descriptor opencv_mcc opencv_optflow opencv_phase_unwrapping opencv_plot opencv_quality opencv_rapid opencv_reg opencv_rgbd opencv_saliency opencv_shape opencv_stereo opencv_structured_light opencv_superres opencv_surface_matching opencv_text opencv_tracking opencv_videostab opencv_viz opencv_wechat_qrcode opencv_ximgproc opencv_xobjdetect opencv_xphoto \n'}
+[0.578595] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.600425] (-) TimerEvent: {}
+[0.669871] (bouncing_ball_catcher) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[0.670126] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[0.670245] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[0.671218] (bouncing_ball_catcher) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[0.672708] (bouncing_ball_catcher) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[0.673012] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[0.673272] (bouncing_ball_catcher) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[0.675324] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Configuring done\n'}
+[0.700540] (-) TimerEvent: {}
+[0.706428] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Generating done\n'}
+[0.714782] (bouncing_ball_catcher) StdoutLine: {'line': b'-- Build files have been written to: /home/agwyn/ros2_ballGame/build/bouncing_ball_catcher\n'}
+[0.756888] (bouncing_ball_catcher) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target camera_node\x1b[0m\n'}
+[0.771303] (bouncing_ball_catcher) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/game_node.dir/src/game_node.cpp.o\x1b[0m\n'}
+[0.800666] (-) TimerEvent: {}
+[0.806252] (bouncing_ball_catcher) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/camera_node.dir/src/camera_node.cpp.o\x1b[0m\n'}
+[0.900774] (-) TimerEvent: {}
+[1.001116] (-) TimerEvent: {}
+[1.101411] (-) TimerEvent: {}
+[1.201716] (-) TimerEvent: {}
+[1.203108] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:8:10:\x1b[m\x1b[K \x1b[01;31m\x1b[Kfatal error: \x1b[m\x1b[Kcv_bridge/cv_bridge.hpp: No such file or directory\n'}
+[1.203372] (bouncing_ball_catcher) StderrLine: {'line': b'    8 | #include \x1b[01;31m\x1b[K<cv_bridge/cv_bridge.hpp>\x1b[m\x1b[K\n'}
+[1.203577] (bouncing_ball_catcher) StderrLine: {'line': b'      |          \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.203802] (bouncing_ball_catcher) StderrLine: {'line': b'compilation terminated.\n'}
+[1.207884] (bouncing_ball_catcher) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1\n'}
+[1.208345] (bouncing_ball_catcher) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2\n'}
+[1.208624] (bouncing_ball_catcher) StderrLine: {'line': b'gmake[1]: *** Waiting for unfinished jobs....\n'}
+[1.301871] (-) TimerEvent: {}
+[1.402324] (-) TimerEvent: {}
+[1.502677] (-) TimerEvent: {}
+[1.602963] (-) TimerEvent: {}
+[1.703267] (-) TimerEvent: {}
+[1.803593] (-) TimerEvent: {}
+[1.903918] (-) TimerEvent: {}
+[2.004251] (-) TimerEvent: {}
+[2.104569] (-) TimerEvent: {}
+[2.205021] (-) TimerEvent: {}
+[2.305441] (-) TimerEvent: {}
+[2.405875] (-) TimerEvent: {}
+[2.506263] (-) TimerEvent: {}
+[2.606649] (-) TimerEvent: {}
+[2.706975] (-) TimerEvent: {}
+[2.807259] (-) TimerEvent: {}
+[2.907587] (-) TimerEvent: {}
+[3.008002] (-) TimerEvent: {}
+[3.108525] (-) TimerEvent: {}
+[3.208982] (-) TimerEvent: {}
+[3.309424] (-) TimerEvent: {}
+[3.409942] (-) TimerEvent: {}
+[3.510308] (-) TimerEvent: {}
+[3.610694] (-) TimerEvent: {}
+[3.711075] (-) TimerEvent: {}
+[3.811461] (-) TimerEvent: {}
+[3.911862] (-) TimerEvent: {}
+[4.012245] (-) TimerEvent: {}
+[4.112609] (-) TimerEvent: {}
+[4.212988] (-) TimerEvent: {}
+[4.313360] (-) TimerEvent: {}
+[4.413702] (-) TimerEvent: {}
+[4.514821] (-) TimerEvent: {}
+[4.615168] (-) TimerEvent: {}
+[4.715513] (-) TimerEvent: {}
+[4.815846] (-) TimerEvent: {}
+[4.916209] (-) TimerEvent: {}
+[5.016649] (-) TimerEvent: {}
+[5.117068] (-) TimerEvent: {}
+[5.217443] (-) TimerEvent: {}
+[5.317854] (-) TimerEvent: {}
+[5.418255] (-) TimerEvent: {}
+[5.518684] (-) TimerEvent: {}
+[5.618988] (-) TimerEvent: {}
+[5.719327] (-) TimerEvent: {}
+[5.819805] (-) TimerEvent: {}
+[5.920223] (-) TimerEvent: {}
+[6.020519] (-) TimerEvent: {}
+[6.120877] (-) TimerEvent: {}
+[6.221277] (-) TimerEvent: {}
+[6.321676] (-) TimerEvent: {}
+[6.422042] (-) TimerEvent: {}
+[6.522415] (-) TimerEvent: {}
+[6.622852] (-) TimerEvent: {}
+[6.723243] (-) TimerEvent: {}
+[6.823724] (-) TimerEvent: {}
+[6.924196] (-) TimerEvent: {}
+[7.024965] (-) TimerEvent: {}
+[7.125349] (-) TimerEvent: {}
+[7.225861] (-) TimerEvent: {}
+[7.326184] (-) TimerEvent: {}
+[7.426548] (-) TimerEvent: {}
+[7.526899] (-) TimerEvent: {}
+[7.627234] (-) TimerEvent: {}
+[7.727725] (-) TimerEvent: {}
+[7.828190] (-) TimerEvent: {}
+[7.928647] (-) TimerEvent: {}
+[8.028945] (-) TimerEvent: {}
+[8.093829] (bouncing_ball_catcher) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX executable camera_node\x1b[0m\n'}
+[8.129035] (-) TimerEvent: {}
+[8.229445] (-) TimerEvent: {}
+[8.330023] (-) TimerEvent: {}
+[8.430382] (-) TimerEvent: {}
+[8.530804] (-) TimerEvent: {}
+[8.631140] (-) TimerEvent: {}
+[8.731561] (-) TimerEvent: {}
+[8.831926] (-) TimerEvent: {}
+[8.932338] (-) TimerEvent: {}
+[9.032725] (-) TimerEvent: {}
+[9.069476] (bouncing_ball_catcher) StdoutLine: {'line': b'[ 75%] Built target camera_node\n'}
+[9.071664] (bouncing_ball_catcher) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[9.074670] (bouncing_ball_catcher) CommandEnded: {'returncode': 2}
+[9.090331] (bouncing_ball_catcher) JobEnded: {'identifier': 'bouncing_ball_catcher', 'rc': 2}
+[9.101309] (-) EventReactorShutdown: {}

@@ -1,0 +1,29 @@
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In constructor ‘[01m[KGameNode::GameNode()[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:102:1:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K)[m[K’ token
+  102 | [01;31m[K)[m[K;
+      | [01;31m[K^[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:224:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kball[m[K’ was not declared in this scope; did you mean ‘[01m[KBall[m[K’?
+  224 |         for (Ball &b: [01;31m[Kball[m[K){
+      |                       [01;31m[K^~~~[m[K
+      |                       [32m[KBall[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::showUserScore(cv::Mat&)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:280:82:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kcv::Scalar[m[K’ {aka ‘[01m[Kcv::Scalar_<double>[m[K’} to ‘[01m[Kdouble[m[K’
+  280 |         cv::putText(frame, str, cv::Point(10, 30), cv::FONT_HERSHEY_SIMPLEX, cv::[01;31m[KScalar(255, 124, 0)[m[K, 2);
+      |                                                                                  [01;31m[K^~~~~~~~~~~~~~~~~~~[m[K
+      |                                                                                  [01;31m[K|[m[K
+      |                                                                                  [01;31m[Kcv::Scalar {aka cv::Scalar_<double>}[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:74[m[K,
+                 from [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/balls.h:2[m[K,
+                 from [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:18[m[K:
+[01m[K/usr/include/opencv4/opencv2/imgproc.hpp:4721:47:[m[K [01;36m[Knote: [m[K  initializing argument 5 of ‘[01m[Kvoid cv::putText(cv::InputOutputArray, const String&, cv::Point, int, double, cv::Scalar, int, int, bool)[m[K’
+ 4721 |                          int fontFace, [01;36m[Kdouble fontScale[m[K, Scalar color,
+      |                                        [01;36m[K~~~~~~~^~~~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::drawFrame(cv::Mat&, const std::vector<cv::Point_<int> >&, int&, int&)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:301:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kscalar[m[K’ is not a member of ‘[01m[Kcv[m[K’; did you mean ‘[01m[KScalar[m[K’?
+  301 |         cv::rectangle(frame, box, cv::[01;31m[Kscalar[m[K(125, 255, 0), 2);
+      |                                       [01;31m[K^~~~~~[m[K
+      |                                       [32m[KScalar[m[K
+gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

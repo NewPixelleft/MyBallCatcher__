@@ -1,0 +1,18 @@
+[35m[1mConsolidate compiler generated dependencies of target game_node[0m
+[ 50%] Built target camera_node
+[ 75%] [32mBuilding CXX object CMakeFiles/game_node.dir/src/game_node.cpp.o[0m
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In constructor ‘[01m[KGameNode::GameNode()[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:100:60:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass rclcpp::Parameter[m[K’ has no member named ‘[01m[Kas_float[m[K’
+  100 |         holdDuration = this->get_parameter("holdDuration").[01;31m[Kas_float[m[K();
+      |                                                            [01;31m[K^~~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:273:22:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KGameNode::showUserScore()[m[K’
+  273 |         [01;31m[KshowUserScore()[m[K;
+      |         [01;31m[K~~~~~~~~~~~~~^~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:287:10:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid GameNode::showUserScore(cv::Mat&)[m[K’
+  287 |     void [01;36m[KshowUserScore[m[K(cv::Mat &frame){
+      |          [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:287:10:[m[K [01;36m[Knote: [m[K  candidate expects 1 argument, 0 provided
+gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

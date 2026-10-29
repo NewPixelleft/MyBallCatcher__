@@ -1,0 +1,104 @@
+[0.000000] (-) TimerEvent: {}
+[0.000584] (bouncing_ball_catcher) JobQueued: {'identifier': 'bouncing_ball_catcher', 'dependencies': OrderedDict()}
+[0.000789] (bouncing_ball_catcher) JobStarted: {'identifier': 'bouncing_ball_catcher'}
+[0.011739] (bouncing_ball_catcher) JobProgress: {'identifier': 'bouncing_ball_catcher', 'progress': 'cmake'}
+[0.012585] (bouncing_ball_catcher) JobProgress: {'identifier': 'bouncing_ball_catcher', 'progress': 'build'}
+[0.013705] (bouncing_ball_catcher) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher', '--', '-j8', '-l8'], 'cwd': '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'agwyn'), ('LC_TIME', 'id_ID.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/agwyn'), ('OLDPWD', '/home/agwyn'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'id_ID.UTF-8'), ('SYSTEMD_EXEC_PID', '1199'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/agwyn/ros2_ballGame/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'agwyn'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'agwyn'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/nvim'), ('SESSION_MANAGER', 'local/VannaLinux:@/tmp/.ICE-unix/1166,unix/VannaLinux:/tmp/.ICE-unix/1166'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'id_ID.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/b87123d0_2ddc_482a_80f6_52c514fa9d4b'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'id_ID.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.GKZ0X3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.164'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/agwyn/ros2_ballGame/install/bouncing_ball_catcher:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'id_ID.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'id_ID.UTF-8'), ('LC_IDENTIFICATION', 'id_ID.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/agwyn/ros2_ballGame/build/bouncing_ball_catcher'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'id_ID.UTF-8'), ('LC_PAPER', 'id_ID.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/agwyn/ros2_ballGame/install/bouncing_ball_catcher:/opt/ros/humble')]), 'shell': False}
+[0.072544] (bouncing_ball_catcher) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target game_node\x1b[0m\n'}
+[0.091636] (bouncing_ball_catcher) StdoutLine: {'line': b'[ 50%] Built target camera_node\n'}
+[0.099589] (-) TimerEvent: {}
+[0.099858] (bouncing_ball_catcher) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/game_node.dir/src/game_node.cpp.o\x1b[0m\n'}
+[0.199709] (-) TimerEvent: {}
+[0.300082] (-) TimerEvent: {}
+[0.400439] (-) TimerEvent: {}
+[0.500874] (-) TimerEvent: {}
+[0.601232] (-) TimerEvent: {}
+[0.701566] (-) TimerEvent: {}
+[0.802066] (-) TimerEvent: {}
+[0.903355] (-) TimerEvent: {}
+[1.004357] (-) TimerEvent: {}
+[1.105231] (-) TimerEvent: {}
+[1.205695] (-) TimerEvent: {}
+[1.306076] (-) TimerEvent: {}
+[1.406590] (-) TimerEvent: {}
+[1.506973] (-) TimerEvent: {}
+[1.607490] (-) TimerEvent: {}
+[1.707926] (-) TimerEvent: {}
+[1.808378] (-) TimerEvent: {}
+[1.908928] (-) TimerEvent: {}
+[2.009355] (-) TimerEvent: {}
+[2.109687] (-) TimerEvent: {}
+[2.210138] (-) TimerEvent: {}
+[2.310583] (-) TimerEvent: {}
+[2.411048] (-) TimerEvent: {}
+[2.511415] (-) TimerEvent: {}
+[2.611837] (-) TimerEvent: {}
+[2.712156] (-) TimerEvent: {}
+[2.812452] (-) TimerEvent: {}
+[2.912800] (-) TimerEvent: {}
+[3.013184] (-) TimerEvent: {}
+[3.113552] (-) TimerEvent: {}
+[3.213905] (-) TimerEvent: {}
+[3.314164] (-) TimerEvent: {}
+[3.414478] (-) TimerEvent: {}
+[3.514855] (-) TimerEvent: {}
+[3.615154] (-) TimerEvent: {}
+[3.715486] (-) TimerEvent: {}
+[3.815948] (-) TimerEvent: {}
+[3.916299] (-) TimerEvent: {}
+[4.016618] (-) TimerEvent: {}
+[4.116938] (-) TimerEvent: {}
+[4.217285] (-) TimerEvent: {}
+[4.317607] (-) TimerEvent: {}
+[4.417974] (-) TimerEvent: {}
+[4.518406] (-) TimerEvent: {}
+[4.594131] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GameNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.594487] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:108:37:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kidx\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[4.594655] (bouncing_ball_catcher) StderrLine: {'line': b'  108 |         setLargestArea(largestArea, \x1b[01;31m\x1b[Kidx\x1b[m\x1b[K, contours);\n'}
+[4.594811] (bouncing_ball_catcher) StderrLine: {'line': b'      |                                     \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[4.595044] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid GameNode::setLargestArea(double&, int&, const std::vector<std::vector<cv::Point_<int> > >&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[4.595221] (bouncing_ball_catcher) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:123:30:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kcomparison of integer expressions of different signedness: \xe2\x80\x98\x1b[01m\x1b[Ksize_t\x1b[m\x1b[K\xe2\x80\x99 {aka \xe2\x80\x98\x1b[01m\x1b[Klong unsigned int\x1b[m\x1b[K\xe2\x80\x99} and \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wsign-compare\x07-Wsign-compare\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[4.595394] (bouncing_ball_catcher) StderrLine: {'line': b'  123 |         for (size_t i = 0; \x1b[01;35m\x1b[Ki < static_cast<int>(contGroup.size())\x1b[m\x1b[K; i++){\n'}
+[4.595542] (bouncing_ball_catcher) StderrLine: {'line': b'      |                            \x1b[01;35m\x1b[K~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[4.618550] (-) TimerEvent: {}
+[4.719017] (-) TimerEvent: {}
+[4.819525] (-) TimerEvent: {}
+[4.919967] (-) TimerEvent: {}
+[5.020422] (-) TimerEvent: {}
+[5.120857] (-) TimerEvent: {}
+[5.221312] (-) TimerEvent: {}
+[5.321810] (-) TimerEvent: {}
+[5.422406] (-) TimerEvent: {}
+[5.522919] (-) TimerEvent: {}
+[5.623427] (-) TimerEvent: {}
+[5.723962] (-) TimerEvent: {}
+[5.824270] (-) TimerEvent: {}
+[5.924623] (-) TimerEvent: {}
+[6.025050] (-) TimerEvent: {}
+[6.125427] (-) TimerEvent: {}
+[6.225743] (-) TimerEvent: {}
+[6.326088] (-) TimerEvent: {}
+[6.426625] (-) TimerEvent: {}
+[6.527164] (-) TimerEvent: {}
+[6.627521] (-) TimerEvent: {}
+[6.727942] (-) TimerEvent: {}
+[6.828466] (-) TimerEvent: {}
+[6.928938] (-) TimerEvent: {}
+[7.029263] (-) TimerEvent: {}
+[7.129597] (-) TimerEvent: {}
+[7.230019] (-) TimerEvent: {}
+[7.330455] (-) TimerEvent: {}
+[7.430857] (-) TimerEvent: {}
+[7.531255] (-) TimerEvent: {}
+[7.631580] (-) TimerEvent: {}
+[7.731919] (-) TimerEvent: {}
+[7.832311] (-) TimerEvent: {}
+[7.932632] (-) TimerEvent: {}
+[8.032964] (-) TimerEvent: {}
+[8.111603] (bouncing_ball_catcher) StderrLine: {'line': b'gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1\n'}
+[8.112130] (bouncing_ball_catcher) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2\n'}
+[8.112409] (bouncing_ball_catcher) StderrLine: {'line': b'gmake: *** [Makefile:146: all] Error 2\n'}
+[8.117581] (bouncing_ball_catcher) CommandEnded: {'returncode': 2}
+[8.131607] (bouncing_ball_catcher) JobEnded: {'identifier': 'bouncing_ball_catcher', 'rc': 2}
+[8.133035] (-) TimerEvent: {}
+[8.142143] (-) EventReactorShutdown: {}

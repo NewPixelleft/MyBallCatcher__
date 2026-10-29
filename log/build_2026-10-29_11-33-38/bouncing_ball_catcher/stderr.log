@@ -1,0 +1,8 @@
+In file included from [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:8[m[K:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/colourParser.h:5:10:[m[K [01;31m[Kfatal error: [m[Kiosstream: No such file or directory
+    5 | #include [01;31m[K<iosstream>[m[K
+      |          [01;31m[K^~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

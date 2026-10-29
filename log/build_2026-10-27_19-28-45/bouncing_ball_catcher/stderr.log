@@ -1,0 +1,14 @@
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:[m[K In member function ‘[01m[Kvoid CameraNode::publish_frame()[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:85:24:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcv::VideoCapture::set(cv::VideoCaptureProperties)[m[K’
+   85 |                 [01;31m[Kcap.set(cv::CAP_PROP_POS_FRAMES)[m[K;
+      |                 [01;31m[K~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/highgui.hpp:51[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:68[m[K,
+                 from [01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:10[m[K:
+[01m[K/usr/include/opencv4/opencv2/videoio.hpp:868:26:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvirtual bool cv::VideoCapture::set(int, double)[m[K’
+  868 |     CV_WRAP virtual bool [01;36m[Kset[m[K(int propId, double value);
+      |                          [01;36m[K^~~[m[K
+[01m[K/usr/include/opencv4/opencv2/videoio.hpp:868:26:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+gmake[2]: *** [CMakeFiles/camera_node.dir/build.make:76: CMakeFiles/camera_node.dir/src/camera_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/camera_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

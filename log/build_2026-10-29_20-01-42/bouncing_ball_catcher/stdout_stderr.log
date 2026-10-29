@@ -1,0 +1,31 @@
+[35m[1mConsolidate compiler generated dependencies of target game_node[0m
+[ 50%] Built target camera_node
+[ 75%] [32mBuilding CXX object CMakeFiles/game_node.dir/src/game_node.cpp.o[0m
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:277:51:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight[m[K’ has not been declared
+  277 |     void respawnBall(Ball &ball, int width = 640, [01;31m[Kheight[m[K = 480){
+      |                                                   [01;31m[K^~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::imageCallback(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:184:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kball[m[K’ was not declared in this scope; did you mean ‘[01m[KBall[m[K’?
+  184 |         [01;31m[Kball[m[K *nearestBall = nullptr;
+      |         [01;31m[K^~~~[m[K
+      |         [32m[KBall[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:184:15:[m[K [01;31m[Kerror: [m[K‘[01m[KnearestBall[m[K’ was not declared in this scope
+  184 |         ball *[01;31m[KnearestBall[m[K = nullptr;
+      |               [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::respawnBall(Ball&, int, int)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:283:45:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kstd::uniform_int_distribution<int> xDist[m[K’
+  283 |         std::uniform_int_distribution <int> [01;31m[KxDist[m[K(
+      |                                             [01;31m[K^~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:280:45:[m[K [01;36m[Knote: [m[K‘[01m[Kstd::uniform_int_distribution<int> xDist[m[K’ previously declared here
+  280 |         std::uniform_int_distribution <int> [01;36m[KxDist[m[K(
+      |                                             [01;36m[K^~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:284:21:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight[m[K’ was not declared in this scope
+  284 |             ball.r, [01;31m[Kheight[m[K - ball.r
+      |                     [01;31m[K^~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:291:36:[m[K [01;31m[Kerror: [m[K‘[01m[KyDist[m[K’ was not declared in this scope; did you mean ‘[01m[KxDist[m[K’?
+  291 |                 static_cast<float>([01;31m[KyDist[m[K(rng))
+      |                                    [01;31m[K^~~~~[m[K
+      |                                    [32m[KxDist[m[K
+gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

@@ -1,0 +1,8 @@
+source;share/bouncing_ball_catcher/hook/cmake_prefix_path.ps1
+source;share/bouncing_ball_catcher/hook/cmake_prefix_path.dsv
+source;share/bouncing_ball_catcher/hook/cmake_prefix_path.sh
+source;share/bouncing_ball_catcher/local_setup.bash
+source;share/bouncing_ball_catcher/local_setup.dsv
+source;share/bouncing_ball_catcher/local_setup.ps1
+source;share/bouncing_ball_catcher/local_setup.sh
+source;share/bouncing_ball_catcher/local_setup.zsh

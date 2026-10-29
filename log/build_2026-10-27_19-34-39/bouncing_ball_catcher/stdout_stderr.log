@@ -1,0 +1,22 @@
+[35m[1mConsolidate compiler generated dependencies of target camera_node[0m
+[ 50%] [32m[1mLinking CXX executable camera_node[0m
+/usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `CameraNode::CameraNode()':
+camera_node.cpp:(.text._ZN10CameraNodeC2Ev[_ZN10CameraNodeC5Ev]+0x10a): undefined reference to `cv::VideoCapture::VideoCapture()'
+/usr/bin/ld: camera_node.cpp:(.text._ZN10CameraNodeC2Ev[_ZN10CameraNodeC5Ev]+0x766): undefined reference to `cv::VideoCapture::open(int, int)'
+/usr/bin/ld: camera_node.cpp:(.text._ZN10CameraNodeC2Ev[_ZN10CameraNodeC5Ev]+0x78d): undefined reference to `cv::VideoCapture::open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
+/usr/bin/ld: camera_node.cpp:(.text._ZN10CameraNodeC2Ev[_ZN10CameraNodeC5Ev]+0x7a2): undefined reference to `cv::VideoCapture::isOpened() const'
+/usr/bin/ld: camera_node.cpp:(.text._ZN10CameraNodeC2Ev[_ZN10CameraNodeC5Ev]+0x844): undefined reference to `cv::VideoCapture::set(int, double)'
+/usr/bin/ld: camera_node.cpp:(.text._ZN10CameraNodeC2Ev[_ZN10CameraNodeC5Ev]+0x875): undefined reference to `cv::VideoCapture::set(int, double)'
+/usr/bin/ld: camera_node.cpp:(.text._ZN10CameraNodeC2Ev[_ZN10CameraNodeC5Ev]+0xf1a): undefined reference to `cv::VideoCapture::open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
+/usr/bin/ld: camera_node.cpp:(.text._ZN10CameraNodeC2Ev[_ZN10CameraNodeC5Ev]+0xf58): undefined reference to `cv::VideoCapture::open(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&, int)'
+/usr/bin/ld: camera_node.cpp:(.text._ZN10CameraNodeC2Ev[_ZN10CameraNodeC5Ev]+0x10a1): undefined reference to `cv::VideoCapture::~VideoCapture()'
+/usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `CameraNode::publish_frame()':
+camera_node.cpp:(.text._ZN10CameraNode13publish_frameEv[_ZN10CameraNode13publish_frameEv]+0x71): undefined reference to `cv::VideoCapture::read(cv::_OutputArray const&)'
+/usr/bin/ld: camera_node.cpp:(.text._ZN10CameraNode13publish_frameEv[_ZN10CameraNode13publish_frameEv]+0xcf): undefined reference to `cv::VideoCapture::get(int) const'
+/usr/bin/ld: camera_node.cpp:(.text._ZN10CameraNode13publish_frameEv[_ZN10CameraNode13publish_frameEv]+0x10f): undefined reference to `cv::VideoCapture::set(int, double)'
+/usr/bin/ld: CMakeFiles/camera_node.dir/src/camera_node.cpp.o: in function `CameraNode::~CameraNode()':
+camera_node.cpp:(.text._ZN10CameraNodeD2Ev[_ZN10CameraNodeD5Ev]+0x50): undefined reference to `cv::VideoCapture::~VideoCapture()'
+collect2: error: ld returned 1 exit status
+gmake[2]: *** [CMakeFiles/camera_node.dir/build.make:179: camera_node] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/camera_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

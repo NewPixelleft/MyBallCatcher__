@@ -1,0 +1,88 @@
+[35m[1mConsolidate compiler generated dependencies of target camera_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/camera_node.dir/src/camera_node.cpp.o[0m
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:79:9:[m[K [01;31m[Kerror: [m[K‘[01m[KvideoCapture[m[K’ in namespace ‘[01m[Kcv[m[K’ does not name a type; did you mean ‘[01m[KVideoCapture[m[K’?
+   79 |     cv::[01;31m[KvideoCapture[m[K cap;
+      |         [01;31m[K^~~~~~~~~~~~[m[K
+      |         [32m[KVideoCapture[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:80:49:[m[K [01;31m[Kerror: [m[K‘[01m[KSharedPtrr[m[K’ in ‘[01m[Kclass rclcpp::Publisher<sensor_msgs::msg::Image_<std::allocator<void> > >[m[K’ does not name a type
+   80 |     rclcpp::Publisher<sensor_msgs::msg::Image>::[01;31m[KSharedPtrr[m[K publisher;
+      |                                                 [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:113:2:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ after class definition
+  113 | }
+      |  [01;31m[K^[m[K
+      |  [32m[K;[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:[m[K In constructor ‘[01m[KCameraNode::CameraNode()[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:21:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kclass CameraNode[m[K’ has no member named ‘[01m[Kdelcare_parameter[m[K’; did you mean ‘[01m[Kdeclare_parameter[m[K’?
+   21 |         this -> [01;31m[Kdelcare_parameter[m[K<std::string>  ("source", "0");
+      |                 [01;31m[K^~~~~~~~~~~~~~~~~[m[K
+      |                 [32m[Kdeclare_parameter[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:21:46:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K>[m[K’ token
+   21 |         this -> delcare_parameter<std::string[01;31m[K>[m[K  ("source", "0");
+      |                                              [01;31m[K^[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:21:50:[m[K [01;35m[Kwarning: [m[Kleft operand of comma operator has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+   21 |         this -> delcare_parameter<std::string>  ([01;35m[K"source"[m[K, "0");
+      |                                                  [01;35m[K^~~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:35:9:[m[K [01;31m[Kerror: [m[Kexpected initializer before ‘[01m[KsourceStr[m[K’
+   35 |         [01;31m[KsourceStr[m[K   = this->get_parameter("source").as_string();
+      |         [01;31m[K^~~~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:37:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kwidth[m[K’ was not declared in this scope; did you mean ‘[01m[Kwitdh[m[K’?
+   37 |         [01;31m[Kwidth[m[K       = this->get_parameter("width").as_int();
+      |         [01;31m[K^~~~~[m[K
+      |         [32m[Kwitdh[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:38:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kheight[m[K’ was not declared in this scope
+   38 |         [01;31m[Kheight[m[K      = this->get_parameter("height").as_int();
+      |         [01;31m[K^~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:40:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kwdth[m[K’ was not declared in this scope
+   40 |         if (!valid_basic_parameter(fps, [01;31m[Kwdth[m[K, height))
+      |                                         [01;31m[K^~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:49:17:[m[K [01;31m[Kerror: [m[K‘[01m[Kcap[m[K’ was not declared in this scope
+   49 |                 [01;31m[Kcap[m[K.open(camera_idx);
+      |                 [01;31m[K^~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:50:18:[m[K [01;31m[Kerror: [m[K‘[01m[Kcap[m[K’ was not declared in this scope
+   50 |             else [01;31m[Kcap[m[K.open(sourceStr);
+      |                  [01;31m[K^~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:53:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K{[m[K’ before ‘[01m[Kcap[m[K’
+   53 |             [01;31m[Kcap[m[K.open(sourceStr);
+      |             [01;31m[K^~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:53:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kcap[m[K’ was not declared in this scope
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:54:9:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[Kcatch[m[K’
+   54 |         [01;31m[Kcatch[m[K (const std::out_of_range&)
+      |         [01;31m[K^~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:63:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublish_frame[m[K’?
+   63 |         [01;31m[Kpublisher[m[K = this->
+      |         [01;31m[K^~~~~~~~~[m[K
+      |         [32m[Kpublish_frame[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:73:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_INFO[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_INFO[m[K’?
+   73 |         [01;31m[Krclcpp_INFO[m[K(
+      |         [01;31m[K^~~~~~~~~~~[m[K
+      |         [32m[KRCLCPP_INFO[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:32:13:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kwitdh[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-variable-Wunused-variable]8;;[m[K]
+   32 |         int [01;35m[Kwitdh[m[K;
+      |             [01;35m[K^~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:[m[K In member function ‘[01m[Kvoid CameraNode::publish_frame()[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:86:14:[m[K [01;31m[Kerror: [m[K‘[01m[Kcap[m[K’ was not declared in this scope
+   86 |         if (![01;31m[Kcap[m[K.read(frame) || frame.empty()){
+      |              [01;31m[K^~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:90:13:[m[K [01;31m[Kerror: [m[Kexpected primary-expression before ‘[01m[K}[m[K’ token
+   90 |             [01;31m[K}[m[K
+      |             [01;31m[K^[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:90:13:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ before ‘[01m[K}[m[K’ token
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:91:13:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp_WARN[m[K’ was not declared in this scope; did you mean ‘[01m[KRCLCPP_WARN[m[K’?
+   91 |             [01;31m[Krclcpp_WARN[m[K(
+      |             [01;31m[K^~~~~~~~~~~[m[K
+      |             [32m[KRCLCPP_WARN[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:105:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher[m[K’ was not declared in this scope; did you mean ‘[01m[Kpublish_frame[m[K’?
+  105 |         [01;31m[Kpublisher[m[K->publish(*msg);
+      |         [01;31m[K^~~~~~~~~[m[K
+      |         [32m[Kpublish_frame[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:[m[K In member function ‘[01m[Kbool CameraNode::valid_basic_parameter(double, int, int)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:111:31:[m[K [01;31m[Kerror: [m[K‘[01m[K__witdh[m[K’ was not declared in this scope; did you mean ‘[01m[K__width[m[K’?
+  111 |         return __fps > 0.0 && [01;31m[K__witdh[m[K > 0 && __height > 0;
+      |                               [01;31m[K^~~~~~~[m[K
+      |                               [32m[K__width[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/camera_node.cpp:110:50:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[K__width[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+  110 |     bool valid_basic_parameter(double __fps, [01;35m[Kint __width[m[K, int __height){
+      |                                              [01;35m[K~~~~^~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/camera_node.dir/build.make:76: CMakeFiles/camera_node.dir/src/camera_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/camera_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2
