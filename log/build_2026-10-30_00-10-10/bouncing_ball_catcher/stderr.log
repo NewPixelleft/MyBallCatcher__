@@ -1,0 +1,19 @@
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:133:9:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint GameNode::globalBallRadius[m[K’
+  133 |     int [01;31m[KglobalBallRadius[m[K;
+      |         [01;31m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:111:9:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint GameNode::globalBallRadius[m[K’
+  111 |     int [01;36m[KglobalBallRadius[m[K = 50;
+      |         [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::updateBallSpeed()[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:124:13:[m[K [01;31m[Kerror: [m[K‘[01m[Kballspeed[m[K’ was not declared in this scope; did you mean ‘[01m[KballSpeed[m[K’?
+  124 |             [01;31m[Kballspeed[m[K = ballspeed * 11 / 10;
+      |             [01;31m[K^~~~~~~~~[m[K
+      |             [32m[KballSpeed[m[K
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:[m[K In member function ‘[01m[Kvoid GameNode::respawnBall(Ball&, int, int)[m[K’:
+[01m[K/home/agwyn/ros2_ballGame/bouncing_ball_catcher/src/game_node.cpp:462:43:[m[K [01;31m[Kerror: [m[K‘[01m[Kballspeed[m[K’ was not declared in this scope; did you mean ‘[01m[KballSpeed[m[K’?
+  462 |                 ball.vel = randomVelocity([01;31m[Kballspeed[m[K);
+      |                                           [01;31m[K^~~~~~~~~[m[K
+      |                                           [32m[KballSpeed[m[K
+gmake[2]: *** [CMakeFiles/game_node.dir/build.make:76: CMakeFiles/game_node.dir/src/game_node.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:165: CMakeFiles/game_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

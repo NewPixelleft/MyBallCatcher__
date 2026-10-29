@@ -28,115 +28,203 @@
 
 #define defaultQueueDepth 10
 
-int ballspeed = 40;
-int userscore = 0;
-
-void updateBallSpeed(){
-    ballspeed += 10;
-    ballspeed = ballspeed * 11 / 10;
-}
-
-void updateUserScore(){
-    userscore++;
-}
 
 class GameNode : public rclcpp::Node{
-public:
+    public:
     GameNode() : Node("game_node") {
+        hsvBarrier cb;
+        GAMECFG cfg;
         RCLCPP_INFO(
             this->get_logger(), "Game Node Initialized"
         );
-        hsvBarrier cb;
+
+
+
         try {
             std::ifstream colfile("colourConfig.txt");
-            if (parseColour(colfile, cb) != 0){
-                std::cerr << "Failed to read colour file";
-                return;
-            }
+            parseColour(colfile, cb);
         }
-        catch(std::exception &e){
-            std::cerr << "Failed in initiating colour file";
-            return;
+        
+        catch (const std::exception &e) {
+            RCLCPP_FATAL(
+                this->get_logger(),
+                "Failed to parse colour configuration: %s",
+                e.what()
+            );
+            throw;
         }
+
+
+
         try{
             GAMECFG cfg;
-            gameVarInit(cfg);
 
-            balls = generateBalls(cfg.ballCount, cfg.ballRadius, ballspeed);
+            try {
+                gameVarInit(cfg);
+                setGameConfig(cfg);
+
+                balls = generateBalls(
+                    ballCount,
+                    globalBallRadius,
+                    ballSpeed,
+                    cfg.width,
+                    cfg.height
+                );
+            }
+            catch (const std::exception &e) {
+                RCLCPP_FATAL(
+                    this->get_logger(),
+                    "Failed at initiating game config: %s",
+                    e.what()
+                );
+                throw;
+            }
         }
         catch(std::exception &e){
             std::cerr << "Failed at initiating game config!";
             return;
         }
         
-        this->declare_parameter <std::string>("target_color", cb.colname);
-
-
-        this->declare_parameter<int>("huemin", cb.huemin);
-        this->declare_parameter<int>("huemax", cb.huemax);
-
-        this->declare_parameter<int>("satmin", cb.satmin);
-        this->declare_parameter<int>("satmax", cb.satmax);
-
-        this->declare_parameter<int>("valmin", cb.valmin);
-        this->declare_parameter<int>("valmax", cb.valmax);
-
-        this->declare_parameter<int>("minarea", 100);
-        this->declare_parameter<double>("holdDuration", 2.0f);
-
+        parseColourBarrier(cb);
         
-        colname = this->get_parameter("target_color").as_string();
-
-        huemin = this->get_parameter("huemin").as_int();
-        huemax = this->get_parameter("huemax").as_int();
-
-        satmin = this->get_parameter("satmin").as_int();
-        satmax = this->get_parameter("satmax").as_int();
-
-        valmin = this->get_parameter("valmin").as_int();
-        valmax = this->get_parameter("valmax").as_int();
-
+        this->declare_parameter<int>("minarea", 300);
+        this->declare_parameter<double>("holdDuration", 2.0f);
+        
+        
         minarea = this->get_parameter("minarea").as_int();
         holdDuration = this->get_parameter("holdDuration").as_double();
-
+        
         scorePub = this->   
-                    create_publisher<std_msgs::msg::Int32>("/game/score", 10);
+        create_publisher<std_msgs::msg::Int32>("/game/score", 10);
         
         debugImagePub = this->create_publisher<sensor_msgs::msg::Image>(
-                                "/game/debug_image", defaultQueueDepth
+            "/game/debug_image", defaultQueueDepth
                                 );
-        
+                                
     }
 private:
-    std::vector <Ball> balls;
-    int globalBallRadius;
-    std::string colname;
+    // int globalHeight;
+    // int globalWidth;
+
+    int ballCount = 3;
+    int ballSpeed = 150;
+    int globalBallRadius = 50;
+
+    bool progressiveSpeed = true;
+    bool ballCollision = true;
+
     int huemin,
         huemax,
         satmin,
         satmax,
         valmin,
         valmax;
+
+    int userscore = 0;
+    std::string colname;
+
+
+    std::vector <Ball> balls;
+
+
+    void updateBallSpeed(){
+        if (progressiveSpeed){
+            ballSpeed = ballSpeed * 11 / 10;
+        }
+    }
+    
+    void updateUserScore(){
+        userscore++;
+    }
+
     std::chrono::steady_clock::time_point lastUpdate =
-    std::chrono::steady_clock::now();
-    rclcpp::Subscription
-        <sensor_msgs::msg::Image>::SharedPtr
-        imageSubscriber = (
-            this -> create_subscription<sensor_msgs::msg::Image>
-                    ("/camera/image_raw", defaultQueueDepth,
-                        std::bind(
-                            &GameNode::imageCallback,
-                            this,
-                            std::placeholders::_1
-                        )
-                    )
-        );
+            std::chrono::steady_clock::now();
+            rclcpp::Subscription
+                <sensor_msgs::msg::Image>::SharedPtr
+                imageSubscriber = (
+                    this -> create_subscription<sensor_msgs::msg::Image>
+                            ("/camera/image_raw", defaultQueueDepth,
+                                std::bind(
+                                    &GameNode::imageCallback,
+                                    this,
+                                    std::placeholders::_1
+                                )
+                            )
+                );
     
     rclcpp::Publisher <std_msgs::msg::Int32>::SharedPtr scorePub;
     rclcpp::Publisher<sensor_msgs::msg::Image>::SharedPtr debugImagePub;
 
     int minarea;
     double holdDuration;
+
+    void setGameConfig(const GAMECFG &cfg) {
+        // MAINCFG
+        this->declare_parameter<int>("width", cfg.width);
+        this->declare_parameter<int>("height", cfg.height);
+
+        // ballRadius
+        this->declare_parameter<int>("ballRadius", cfg.ballRadius);
+        globalBallRadius = this->get_parameter("ballRadius").as_int();
+
+        // ballCount
+        this->declare_parameter<int>("ballCount", cfg.ballCount);
+        ballCount = this->get_parameter("ballCount").as_int();
+
+        // ballSpeed
+        this->declare_parameter<int>("ballSpeed", cfg.ballSpeed);
+        ballSpeed = this->get_parameter("ballSpeed").as_int();
+
+        // rule
+        this->declare_parameter<bool>("ballCollision", cfg.ballCollision);
+        ballCollision = this->get_parameter("ballCollision").as_bool();
+
+        this->declare_parameter<bool>("progressiveSpeed", cfg.progressiveSpeed);
+        progressiveSpeed = this->get_parameter("progressiveSpeed").as_bool();
+    }
+
+    void parseColourBarrier(const hsvBarrier &bar) {
+        this->declare_parameter<std::string>(
+            "target_color", bar.colname
+        );
+
+        this->declare_parameter<int>("huemin", bar.hsvmin[0]);
+        this->declare_parameter<int>("satmin", bar.hsvmin[1]);
+        this->declare_parameter<int>("valmin", bar.hsvmin[2]);
+
+        this->declare_parameter<int>("huemax", bar.hsvmax[0]);
+        this->declare_parameter<int>("satmax", bar.hsvmax[1]);
+        this->declare_parameter<int>("valmax", bar.hsvmax[2]);
+
+        colname = this->get_parameter("target_color").as_string();
+
+        huemin = this->get_parameter("huemin").as_int();
+        satmin = this->get_parameter("satmin").as_int();
+        valmin = this->get_parameter("valmin").as_int();
+
+        huemax = this->get_parameter("huemax").as_int();
+        satmax = this->get_parameter("satmax").as_int();
+        valmax = this->get_parameter("valmax").as_int();
+
+        if (huemin < 0 || huemin > 179 ||
+            huemax < 0 || huemax > 179 ||
+            satmin < 0 || satmin > 255 ||
+            satmax < 0 || satmax > 255 ||
+            valmin < 0 || valmin > 255 ||
+            valmax < 0 || valmax > 255) {
+            throw std::runtime_error(
+                "Make sure the minimum and max values satisfy OpenCV limits! Hue is [0, 180], Sat and Val are [0, 255]"
+            );
+        }
+
+        if (huemin > huemax ||
+            satmin > satmax ||
+            valmin > valmax) {
+            throw std::runtime_error(
+                "HSV minimum values cannot exceed maximum values"
+            );
+        }
+    }
 
     void imageCallback(const sensor_msgs::msg::Image::SharedPtr msg){
         cv::Mat frame;
@@ -212,25 +300,26 @@ private:
         dt = std::min(dt, 0.05f);
 
         Ball *nearestBall = nullptr;
-        float nearestDsq = std::numeric_limits <float>::max();
-        if (detected){
-            for (Ball &b: balls){
+        float nearestDsq = std::numeric_limits<float>::max();
+
+        if (detected) {
+            for (Ball &b : balls) {
                 float dx = static_cast<float>(X) - b.pos.x;
                 float dy = static_cast<float>(Y) - b.pos.y;
-                
-                float dsq= dx * dx + dy * dy;
-                if (dsq <= b.r *b.r && dsq < nearestDsq) {
-                        
-                        nearestDsq = dsq;
-                        nearestBall = &b;
-                    }
-                if (&b != nearestBall){
-                        b.isTracking = false;
+
+                float dsq = dx * dx + dy * dy;
+
+                if (dsq <= b.r * b.r && dsq < nearestDsq) {
+                    nearestDsq = dsq;
+                    nearestBall = &b;
                 }
             }
         }
-        for (Ball &b: balls){
-            if (&b != nearestBall) b.isTracking = false;
+
+        for (Ball &b : balls) {
+            if (&b != nearestBall) {
+                b.isTracking = false;
+            }
         }
 
         if (nearestBall != nullptr){
@@ -262,13 +351,16 @@ private:
                     );
 
                     updateBallSpeed();
-                    respawnBall(*nearestBall);
+                    respawnBall(*nearestBall, frame.cols, frame.rows);
                 }
             }
         }
 
         updateballs(dt, frame.cols, frame.rows);
-        ballCollisions();
+
+        if (ballCollision)
+            ballCollisions();
+
         drawBalls(frame);  
         showUserScore(frame);
         
@@ -367,7 +459,7 @@ private:
 
             if (!overlaps) {
                 ball.pos = position;
-                ball.vel = randomVelocity(ballspeed);
+                ball.vel = randomVelocity(ballSpeed);
                 ball.isTracking = false;
                 return;
             }

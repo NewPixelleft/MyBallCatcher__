@@ -1,6 +1,6 @@
 set(_AMENT_PACKAGE_NAME "bouncing_ball_catcher")
-set(bouncing_ball_catcher_VERSION "0.0.0")
-set(bouncing_ball_catcher_MAINTAINER "agwyn <agwyn@todo.todo>")
+set(bouncing_ball_catcher_VERSION "0.0.1")
+set(bouncing_ball_catcher_MAINTAINER "agwyn <agwynsatriaedu@gmail.com>")
 set(bouncing_ball_catcher_BUILD_DEPENDS "rclcpp" "sensor_msgs" "std_msgs" "cv_bridge")
 set(bouncing_ball_catcher_BUILDTOOL_DEPENDS "ament_cmake")
 set(bouncing_ball_catcher_BUILD_EXPORT_DEPENDS "rclcpp" "sensor_msgs" "std_msgs" "cv_bridge")

@@ -1,1 +1,27 @@
-3
+# Main game parameters
+# ========================================
+MAINCFG WIDTH 640
+MAINCFG HEIGHT 480
+
+# Game variables
+# ========================================
+var BALLCOUNT 3
+var BALLSPEED 150
+
+# Ball radius:
+# Specify an integer for a manual radius.
+# Use CALCULATED to calculate it automatically.
+
+var BALLRADIUS CALCULATED
+
+# Examples:
+# var BALLRADIUS 100
+# var BALLRADIUS CALCULATED
+
+# ========================================
+# Game rules
+# 0 = FALSE
+# 1 = TRUE
+# ========================================
+rul BALLCOLLISION 1
+rul PROGRESSIVE_SPEED 1

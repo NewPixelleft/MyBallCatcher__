@@ -16,7 +16,7 @@ set(_bouncing_ball_catcher_CONFIG_INCLUDED TRUE)
 
 # output package information
 if(NOT bouncing_ball_catcher_FIND_QUIETLY)
-  message(STATUS "Found bouncing_ball_catcher: 0.0.0 (${bouncing_ball_catcher_DIR})")
+  message(STATUS "Found bouncing_ball_catcher: 0.0.1 (${bouncing_ball_catcher_DIR})")
 endif()
 
 # warn when using a deprecated package
