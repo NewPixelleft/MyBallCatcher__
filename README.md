@@ -64,3 +64,43 @@ The overall project runs on 2 different nodes: `camera_node` and `game_node`. Th
 /game/debug_image | sensor_msgs/msg/Image | Imagery data for debugging purposes|
 
 ### .txt Parameters
+The project has 2 `.txt` parameters: `colourConfig.txt` and `gameConfig.txt`. In `colourConfig.txt`, you can freely add, change, and pick HSV Qualifiers. For example, if you want to add and use yellow, you can type something like  
+```txt
+pick col_BLUE
+
+col_YELLOW
+HSV_MIN 40 80 140
+HSV_MAX 75 255 255
+```
+here, `pick` is an operator to determine that we are picking a specific colour. `HSV_MIN` and `HSV_MAX` determine the floor and ceil of the HSV range. In OpenCV configuration, Hue accepts 0-180 integer values, while saturation and value accept 0-255.
+`gameConfig.txt` determines how the game would run. 
+```txt
+# Main game parameters
+# ========================================
+MAINCFG WIDTH 640
+MAINCFG HEIGHT 480
+
+# Game variables
+# ========================================
+var BALLCOUNT 3
+var BALLSPEED 150
+
+# Ball radius:
+# Specify an integer for a manual radius.
+# Use CALCULATED to calculate it automatically.
+
+var BALLRADIUS CALCULATED
+
+# Examples:
+# var BALLRADIUS 100
+# var BALLRADIUS CALCULATED
+
+# ========================================
+# Game rules
+# 0 = FALSE
+# 1 = TRUE
+# ========================================
+rul BALLCOLLISION 1
+rul PROGRESSIVE_SPEED 1
+```
+On both scripts, the `#` char denotes a line of comment
